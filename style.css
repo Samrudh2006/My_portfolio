@@ -158,6 +158,12 @@ body {
   font-size: 0.9rem;
 }
 
+.btn-disabled {
+  opacity: 0.6;
+  pointer-events: none;
+  display: inline-block;
+}
+
 /* Sections */
 .section {
   padding: 5rem 0;
@@ -317,6 +323,25 @@ body {
   border-radius: 50%;
   padding: 2px 4px;
 }
+
+.cert-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-link {
+  display: inline-block;
+  margin-bottom: 0.2rem;
+}
+
+.cert-meta {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.6rem;
+}
+
+.cert-preview { margin-top: 0.2rem; }
+/* Certifications removed */
 
 /* Projects Section */
 .projects-grid {

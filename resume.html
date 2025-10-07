@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samrudh Dwivedula - Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .resume-container { max-width: 800px; margin: 2rem auto; background: white; padding: 2rem; border-radius: 8px; }
+    .resume-header { display:flex; justify-content:space-between; align-items:center; }
+    .resume-name { font-size:2rem; font-weight:700; color:#333; }
+    .resume-section { margin-top:1.2rem; }
+    .resume-section h3 { margin-bottom:0.5rem; }
+    @media print {
+      body { background: white; }
+      .resume-container { box-shadow:none; border-radius:0; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="resume-container">
+      <div class="resume-header">
+        <div>
+          <div class="resume-name">Samrudh Dwivedula</div>
+          <div>Full-Stack Developer • Competitive Programmer</div>
+        </div>
+        <div>
+          <div>samrudhdwivedula12@gmail.com</div>
+          <div>GitHub: github.com/Samrudh2006</div>
+        </div>
+      </div>
+
+      <div class="resume-section">
+        <h3>Summary</h3>
+        <p>Passionate Full-Stack Developer with experience building web applications and tools for competitive programming. Strong problem-solving abilities and an eye for clean, maintainable code.</p>
+      </div>
+
+      <div class="resume-section">
+        <h3>Projects (3)</h3>
+        <ul>
+          <li>Curecoders — Live: https://curecoders.vercel.app/ — Code: https://github.com/Samrudh2006/curecoders</li>
+          <li>FarmIntellect — Demo: https://share.google/AvQf1Z2O7brO7r0S8 (no public repo)</li>
+          <li>Competitive Programming Tracker — Live: https://competitive-programming-tracker-mj8odnze35u2qrnahkq2em.streamlit.app/ — Code: https://github.com/Samrudh2006/competitive-programming-tracker</li>
+        </ul>
+      </div>
+
+      <div class="resume-section">
+        <h3>Skills</h3>
+        <p>Python, JavaScript, React, Next.js, Flask, SQL, Data Structures & Algorithms</p>
+      </div>
+
+      <div class="resume-section">
+        <h3>Education</h3>
+        <p>Computer Science (in progress)</p>
+      </div>
+
+      <div class="resume-section">
+        <h3>Contact</h3>
+        <p>Email: samrudhdwivedula12@gmail.com</p>
+      </div>
+
+    </div>
+  </div>
+
+  <script>
+    // Auto-print if ?print=1 is present
+    (function() {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('print') === '1') {
+          // Wait a moment for fonts/styles to load then print
+          setTimeout(() => {
+            window.print();
+          }, 500);
+        }
+
+        if (params.get('download') === '1') {
+          // Inform user that PDF generation should be done via browser print-to-PDF
+          const note = document.createElement('div');
+          note.style.marginTop = '1rem';
+          note.style.padding = '0.8rem';
+          note.style.background = '#f1f1f1';
+          note.textContent = 'To download a PDF: use your browser Print → Save as PDF. For an automatic PDF, request a server-side generation.';
+          document.querySelector('.resume-container').prepend(note);
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -309,3 +309,6 @@ trailStyle.textContent = `
 document.head.appendChild(trailStyle);
 
 console.log("Portfolio enhanced with advanced features!");
+
+// Certificates gallery logic
+// end of file

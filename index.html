@@ -8,6 +8,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Samrudh Dwivedula — Full-Stack Developer & Competitive Programmer. Projects: Curecoders, FarmIntellect, Competitive Programming Tracker. Live demos and code available." />
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Samrudh Dwivedula — Portfolio" />
+  <meta property="og:description" content="Full-Stack Developer & Competitive Programmer. Check out Curecoders, FarmIntellect and a Competitive Programming Tracker." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://127.0.0.1:8000/" />
+  <meta property="og:image" content="/assets/og-image.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Samrudh Dwivedula — Portfolio" />
+  <meta name="twitter:description" content="Full-Stack Developer & Competitive Programmer. Explore live demos and source code." />
+  <meta name="twitter:image" content="/assets/og-image.svg" />
 </head>
 <body>
 
@@ -22,6 +33,7 @@
     <div class="hero-buttons">
       <a href="#projects" class="btn btn-primary">View My Work</a>
       <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+  <a href="resume.html?download=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download Resume (PDF)</a>
     </div>
   </div>
   <div class="scroll-indicator">
@@ -57,7 +69,7 @@
             <p>Problems Solved</p>
           </div>
           <div class="stat">
-            <h3 class="counter" data-count="25">0</h3>
+            <h3 class="counter" data-count="3">0</h3>
             <p>Projects Completed</p>
           </div>
           <div class="stat">
@@ -139,6 +151,7 @@
           <span class="skill-tag intermediate">Competitive Programming</span>
         </div>
       </div>
+      <!-- Certifications column removed as requested -->
     </div>
   </div>
 </section>
@@ -148,117 +161,66 @@
   <div class="container">
     <h2 class="section-title">Featured Projects</h2>
     <div class="projects-grid">
+
+      <!-- Curecoder -->
       <div class="project-card featured">
         <div class="project-image">
-          <i class="fas fa-robot"></i>
+          <i class="fas fa-user-md"></i>
         </div>
-        <h3>AI-Powered Task Manager</h3>
-        <p>Intelligent task management system with ML-based priority prediction, natural language processing for task creation, and automated scheduling with 95% accuracy.</p>
+  <h3>Curecoders</h3>
+        <p>A web app focused on providing curated coding challenges and learning paths for beginners and intermediate programmers.</p>
+        <div class="project-tech">
+          <span>Next.js</span>
+          <span>React</span>
+          <span>Node.js</span>
+          <span>Vercel</span>
+        </div>
+        <div class="project-links">
+          <a href="https://github.com/Samrudh2006/curecoders" target="_blank" rel="noopener noreferrer" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+          <a href="https://curecoders.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        </div>
+      </div>
+
+      <!-- FarmIntellect -->
+      <div class="project-card featured">
+        <div class="project-image">
+          <i class="fas fa-tractor"></i>
+        </div>
+  <h3>FarmIntellect</h3>
+        <p>An agricultural intelligence platform that provides farm analytics, crop recommendations and tools to help small-scale farmers increase yield.</p>
         <div class="project-tech">
           <span>Python</span>
-          <span>TensorFlow</span>
           <span>Flask</span>
-          <span>React</span>
-          <span>MongoDB</span>
+          <span>Machine Learning</span>
+          <span>Google Drive</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Samrudh2006" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+          <!-- No public repository available for FarmIntellect - show disabled code button -->
+          <span class="btn btn-small btn-disabled"><i class="fab fa-github"></i> Code</span>
+          <!-- Using the Google share link you provided as the working/demo link -->
+          <a href="https://share.google/AvQf1Z2O7brO7r0S8" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Demo / Working Link</a>
         </div>
       </div>
-      
+
+      <!-- CPTracker -->
       <div class="project-card featured">
         <div class="project-image">
-          <i class="fas fa-chart-line"></i>
+          <i class="fas fa-terminal"></i>
         </div>
-        <h3>Real-Time Analytics Dashboard</h3>
-        <p>Full-stack dashboard with live data visualization, WebSocket connections, and interactive charts. Handles 1000+ concurrent users with real-time updates.</p>
+  <h3>Competitive Programming Tracker</h3>
+        <p>Competitive Programming Tracker — a tool to track problems solved, visualize progress, and discover practice recommendations.</p>
         <div class="project-tech">
-          <span>Node.js</span>
-          <span>React</span>
-          <span>Socket.IO</span>
-          <span>D3.js</span>
-          <span>PostgreSQL</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Samrudh2006" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-image">
-          <i class="fas fa-brain"></i>
-        </div>
-        <h3>Advanced Algorithm Visualizer</h3>
-        <p>Interactive platform for visualizing complex algorithms including graph algorithms, dynamic programming, and machine learning concepts with 20+ visualizations.</p>
-        <div class="project-tech">
-          <span>JavaScript</span>
-          <span>Canvas API</span>
-          <span>WebGL</span>
-          <span>CSS3</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Samrudh2006" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-image">
-          <i class="fas fa-shopping-cart"></i>
-        </div>
-        <h3>E-Commerce Platform</h3>
-        <p>Full-featured e-commerce solution with payment integration, inventory management, admin dashboard, and mobile-responsive design.</p>
-        <div class="project-tech">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>MongoDB</span>
-          <span>Stripe API</span>
-          <span>JWT</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Samrudh2006" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-        </div>
-      </div>
-      
-      <div class="project-card">
-        <div class="project-image">
-          <i class="fas fa-code-branch"></i>
-        </div>
-        <h3>Distributed System Monitor</h3>
-        <p>Microservices monitoring solution with health checks, performance metrics, alerting system, and containerized deployment.</p>
-        <div class="project-tech">
+          <span>Streamlit</span>
           <span>Python</span>
-          <span>Docker</span>
-          <span>Redis</span>
-          <span>Grafana</span>
-          <span>FastAPI</span>
+          <span>Pandas</span>
+          <span>Data Visualization</span>
         </div>
         <div class="project-links">
-          <a href="https://github.com/Samrudh2006" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Documentation</a>
+          <a href="https://github.com/Samrudh2006/competitive-programming-tracker" target="_blank" rel="noopener noreferrer" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
+          <a href="https://competitive-programming-tracker-mj8odnze35u2qrnahkq2em.streamlit.app/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
         </div>
       </div>
-      
-      <div class="project-card">
-        <div class="project-image">
-          <i class="fas fa-mobile-alt"></i>
-        </div>
-        <h3>Cross-Platform Mobile App</h3>
-        <p>React Native application with offline capabilities, push notifications, biometric authentication, and cloud synchronization.</p>
-        <div class="project-tech">
-          <span>React Native</span>
-          <span>Firebase</span>
-          <span>TypeScript</span>
-          <span>SQLite</span>
-        </div>
-        <div class="project-links">
-          <a href="https://github.com/Samrudh2006" class="btn btn-small"><i class="fab fa-github"></i> Code</a>
-          <a href="#" class="btn btn-small btn-primary"><i class="fas fa-download"></i> Download</a>
-        </div>
-      </div>
+
     </div>
   </div>
 </section>
@@ -272,46 +234,48 @@
         <i class="fab fa-hackerrank"></i>
         <h3>HackerRank</h3>
         <p>Problem Solving (Intermediate)</p>
-        <a href="https://www.hackerrank.com/profile/samrudhdwivedul1" target="_blank" class="btn btn-small">View Profile</a>
+  <a href="https://www.hackerrank.com/profile/samrudhdwivedul1" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Profile</a>
       </div>
       
       <div class="achievement-card">
         <i class="fas fa-code"></i>
         <h3>LeetCode</h3>
         <p>Active Problem Solver</p>
-        <a href="https://leetcode.com/u/samrudh2006/" target="_blank" class="btn btn-small">View Profile</a>
+  <a href="https://leetcode.com/u/samrudh2006/" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Profile</a>
       </div>
       
       <div class="achievement-card">
         <i class="fas fa-utensils"></i>
         <h3>CodeChef</h3>
         <p>Regular Participant</p>
-        <a href="https://www.codechef.com/users/samrudh123" target="_blank" class="btn btn-small">View Profile</a>
+  <a href="https://www.codechef.com/users/samrudh123" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Profile</a>
       </div>
       
       <div class="achievement-card">
         <i class="fas fa-brain"></i>
         <h3>GeeksforGeeks</h3>
         <p>Active Contributor</p>
-        <a href="https://www.geeksforgeeks.org/user/samrudhdwi8ff0/" target="_blank" class="btn btn-small">View Profile</a>
+  <a href="https://www.geeksforgeeks.org/user/samrudhdwi8ff0/" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Profile</a>
       </div>
       
       <div class="achievement-card">
         <i class="fas fa-bolt"></i>
         <h3>Codeforces</h3>
         <p>Competitive Programmer</p>
-        <a href="https://codeforces.com/profile/samrudh2314" target="_blank" class="btn btn-small">View Profile</a>
+  <a href="https://codeforces.com/profile/samrudh2314" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Profile</a>
       </div>
       
       <div class="achievement-card">
         <i class="fab fa-github"></i>
         <h3>GitHub</h3>
         <p>Open Source Contributions</p>
-        <a href="https://github.com/Samrudh2006" target="_blank" class="btn btn-small">View Profile</a>
+  <a href="https://github.com/Samrudh2006" target="_blank" rel="noopener noreferrer" class="btn btn-small">View Profile</a>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Certificates gallery removed per user request -->
 
 <!-- Contact Section -->
 <section id="contact" class="section">
@@ -331,7 +295,7 @@
           <i class="fab fa-linkedin"></i>
           <div>
             <h3>LinkedIn</h3>
-            <a href="https://www.linkedin.com/in/samrudh-dwivedula" target="_blank">Connect with me</a>
+            <a href="https://www.linkedin.com/in/samrudh-dwivedula" target="_blank" rel="noopener noreferrer">Connect with me</a>
           </div>
         </div>
         
@@ -339,7 +303,7 @@
           <i class="fab fa-github"></i>
           <div>
             <h3>GitHub</h3>
-            <a href="https://github.com/Samrudh2006" target="_blank">View my repositories</a>
+            <a href="https://github.com/Samrudh2006" target="_blank" rel="noopener noreferrer">View my repositories</a>
           </div>
         </div>
       </div>

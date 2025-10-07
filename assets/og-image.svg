@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0" stop-color="#667eea" />
+      <stop offset="1" stop-color="#764ba2" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)" />
+  <g fill="white" font-family="Inter, Arial, sans-serif">
+    <text x="60" y="160" font-size="48" font-weight="700">Samrudh Dwivedula</text>
+    <text x="60" y="220" font-size="28">Full-Stack Developer & Competitive Programmer</text>
+    <g transform="translate(60,300)">
+      <rect x="0" y="0" width="360" height="60" rx="8" fill="rgba(255,255,255,0.12)" />
+      <text x="20" y="38" font-size="22">Curecoders — Live & Code</text>
+    </g>
+    <g transform="translate(60,380)">
+      <rect x="0" y="0" width="420" height="60" rx="8" fill="rgba(255,255,255,0.12)" />
+      <text x="20" y="38" font-size="22">Competitive Programming Tracker — Live & Code</text>
+    </g>
+  </g>
+</svg>
