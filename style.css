@@ -436,6 +436,20 @@ body {
   gap: 2rem;
 }
 
+/* Special positioning for a specific achievement card: place it 3 columns across and 3 rows down on wide screens */
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+/* At larger widths, show exactly 3 columns so the first row has 3 cards and the second row has the next 3 */
+@media (min-width: 900px) {
+  .achievements-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 .achievement-card {
   background: white;
   padding: 2rem;
